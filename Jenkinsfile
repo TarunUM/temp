@@ -20,8 +20,7 @@ pipeline {
 
     stage('run name.py') {
       steps {
-        sh '''dir
-python new.py'''
+        sh 'python new.py'
       }
     }
 
