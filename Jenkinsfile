@@ -9,12 +9,19 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'Changes Made in Git '
           }
         }
 
+      }
+    }
+
+    stage('run name.py') {
+      steps {
+        sh '''dir
+python new.py'''
       }
     }
 
